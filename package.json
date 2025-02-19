@@ -1,6 +1,6 @@
 {
   "name": "q2i-scanner-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Capacitor plugin for Q2i PDA scanner",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
