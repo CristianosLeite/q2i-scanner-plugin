@@ -24,7 +24,7 @@ class CapacitorBarcodeScannerPlugin : Plugin() {
     if (result.resultCode == android.app.Activity.RESULT_OK) {
       val data = result.data?.getStringExtra("SCAN_RESULT") ?: ""
       val ret = JSObject()
-      ret.put("ScanResult", data)
+      ret.put("value", data)
       call.resolve(ret)
     } else {
       call.reject("Scan canceled")
