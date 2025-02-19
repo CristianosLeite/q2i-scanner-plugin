@@ -1,3 +1,3 @@
-export interface ScannerPluginPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+export interface Q2iScannerPlugin {
+  scanBarcode(): Promise<{ value: string }>;
 }

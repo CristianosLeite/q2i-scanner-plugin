@@ -1,10 +1,11 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { ScannerPluginPlugin } from './definitions';
+import type { Q2iScannerPlugin } from './definitions';
 
-export class ScannerPluginWeb extends WebPlugin implements ScannerPluginPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+export class ScannerPluginWeb extends WebPlugin implements Q2iScannerPlugin {
+  async scanBarcode(): Promise<{ value: string }> {
+    const dummyBarcode = '1234567890';
+    console.log('Simulated barcode scan:', dummyBarcode);
+    return { value: dummyBarcode };
   }
 }

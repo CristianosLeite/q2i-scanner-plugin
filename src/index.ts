@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { ScannerPluginPlugin } from './definitions';
+import type { Q2iScannerPlugin } from './definitions';
 
-const ScannerPlugin = registerPlugin<ScannerPluginPlugin>('ScannerPlugin', {
+const ScannerPlugin = registerPlugin<Q2iScannerPlugin>('ScannerPlugin', {
   web: () => import('./web').then((m) => new m.ScannerPluginWeb()),
 });
 
